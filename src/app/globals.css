@@ -1,0 +1,100 @@
+@import "tailwindcss";
+@source "../..";
+@source "../../src";
+
+@theme {
+  --color-primary-dark: #123B4A;
+  --color-secondary-teal: #176B68;
+  --color-accent-mint: #36B8A4;
+  --color-bg-light: #E8F5F2;
+  --color-surface-white: #F7FAFC;
+
+  --color-dawrak-primary: #123B4A;
+  --color-dawrak-secondary: #176B68;
+  --color-dawrak-accent: #36B8A4;
+  --color-dawrak-bg: #E8F5F2;
+  --color-dawrak-surface: #F7FAFC;
+}
+
+:root {
+  --primary-dark: #123B4A;
+  --secondary-teal: #176B68;
+  --accent-mint: #36B8A4;
+  --bg-light: #E8F5F2;
+  --surface-white: #F7FAFC;
+}
+
+body {
+  background-color: var(--bg-light);
+  color: var(--primary-dark);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Minimalist flat design utilities */
+.flat-card {
+  background-color: #F7FAFC;
+  border: 1px solid #D6E8E3;
+  border-radius: 8px;
+}
+
+.flat-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.625rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+}
+
+.flat-badge-active {
+  background-color: #36B8A4;
+  color: #123B4A;
+}
+
+.flat-badge-pending {
+  background-color: #FCE8B2;
+  color: #7A4B04;
+}
+
+.flat-badge-inactive {
+  background-color: #E2E8F0;
+  color: #4A5568;
+}
+
+.flat-btn-primary {
+  background-color: #123B4A;
+  color: #F7FAFC;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: opacity 0.15s ease-in-out;
+}
+
+.flat-btn-primary:hover {
+  opacity: 0.92;
+}
+
+.flat-btn-secondary {
+  background-color: #176B68;
+  color: #F7FAFC;
+  font-weight: 500;
+  border-radius: 6px;
+}
+
+.flat-btn-secondary:hover {
+  opacity: 0.92;
+}
+
+.flat-btn-accent {
+  background-color: #36B8A4;
+  color: #123B4A;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+.flat-btn-accent:hover {
+  opacity: 0.92;
+}
